@@ -1,28 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
+import 'loginscreen.dart';
+import 'welcome.dart';
 
 void main() => runApp(
-  MaterialApp(
-    home: Scaffold(
-      backgroundColor: Colors.blueGrey[700],
-      appBar: AppBar(
-        backgroundColor: Colors.blueGrey[800],
-        title: Text('Weather'),
+      MaterialApp(
+        title: "Заголовок окна",
+        routes: <String,WidgetBuilder>{
+          "/login":(BuildContext context)=>LoginScreen(),
+        },
+        home: Welcome(),
       ),
-      body: WeatherApp(),
-    ),
-  )
-);
-
-class WeatherApp extends StatefulWidget {
-  @override
-  _WeatherAppState createState() => _WeatherAppState();
-}
-
-class _WeatherAppState extends State<WeatherApp> {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      child: Center(child: Text('Ntcn')),      
     );
-  }
-}
