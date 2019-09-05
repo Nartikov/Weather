@@ -46,13 +46,7 @@ class LoginScreen extends StatelessWidget {
           ),
 
 
-          Padding(
-            padding: const EdgeInsets.only(left: 40.0),
-            child: Text(
-              "Email",
-              style: TextStyle(color: Colors.grey, fontSize: 16.0),
-            ),
-          ),
+
           //cont
           Material(child:          Container(
             decoration: BoxDecoration(
@@ -95,13 +89,6 @@ class LoginScreen extends StatelessWidget {
 
           ),
           
-          Padding(
-            padding: const EdgeInsets.only(left: 40.0),
-            child: Text(
-              "Password",
-              style: TextStyle(color: Colors.grey, fontSize: 16.0),
-            ),
-          ),
           Material(
             child: Container(
             decoration: BoxDecoration(
